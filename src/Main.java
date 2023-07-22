@@ -7,7 +7,7 @@ public class Main {
         int bonus = 0; // Переменная для хранения суммы бонуса
 
         if (rechargeAmount > 1000) {
-            bonus = rechargeAmount / 100 - 10; // Расчет суммы бонуса
+            bonus = (rechargeAmount - 1000)/100; // Расчет суммы бонуса
         }
 
         int finalBalance = currentBalance + rechargeAmount + bonus; // Расчет итогового счета
